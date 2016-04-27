@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D519DB54393D585D81731FDC6A2D1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		2236F977BD44A0C2DB947A8E8BFD47DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		4D3E3F061CD0E26C000F0874 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EF31CD0E26C000F0874 /* AppTheme.swift */; };
+		4D3E3F071CD0E26C000F0874 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EF41CD0E26C000F0874 /* BaseViewController.swift */; };
+		4D3E3F081CD0E26C000F0874 /* GPNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EF51CD0E26C000F0874 /* GPNavController.swift */; };
+		4D3E3F091CD0E26C000F0874 /* GPNavControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EF61CD0E26C000F0874 /* GPNavControllable.swift */; };
+		4D3E3F0A1CD0E26C000F0874 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EF71CD0E26C000F0874 /* CheckBox.swift */; };
+		4D3E3F0B1CD0E26C000F0874 /* CheckboxLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EF81CD0E26C000F0874 /* CheckboxLabelView.swift */; };
+		4D3E3F0C1CD0E26C000F0874 /* CheckboxLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3E3EF91CD0E26C000F0874 /* CheckboxLabelView.xib */; };
+		4D3E3F0D1CD0E26C000F0874 /* ExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EFA1CD0E26C000F0874 /* ExpandableTableViewCell.swift */; };
+		4D3E3F0E1CD0E26C000F0874 /* ExpandableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3E3EFB1CD0E26C000F0874 /* ExpandableTableViewCell.xib */; };
+		4D3E3F0F1CD0E26C000F0874 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EFC1CD0E26C000F0874 /* ExpandableTableViewController.swift */; };
+		4D3E3F101CD0E26C000F0874 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EFD1CD0E26C000F0874 /* GradientView.swift */; };
+		4D3E3F111CD0E26C000F0874 /* MultiSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EFE1CD0E26C000F0874 /* MultiSelectTableViewController.swift */; };
+		4D3E3F121CD0E26C000F0874 /* NextButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3EFF1CD0E26C000F0874 /* NextButtonConfig.swift */; };
+		4D3E3F131CD0E26C000F0874 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3F001CD0E26C000F0874 /* RoundedCornerButton.swift */; };
+		4D3E3F141CD0E26C000F0874 /* RoundedTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3F011CD0E26C000F0874 /* RoundedTextFieldWithIcon.swift */; };
+		4D3E3F151CD0E26C000F0874 /* UIColor+GPUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3F021CD0E26C000F0874 /* UIColor+GPUIKit.swift */; };
+		4D3E3F161CD0E26C000F0874 /* UIViewController+GPUIkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3F031CD0E26C000F0874 /* UIViewController+GPUIkit.swift */; };
+		4D3E3F171CD0E26C000F0874 /* UIButton+GPUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3F041CD0E26C000F0874 /* UIButton+GPUIKit.swift */; };
+		4D3E3F181CD0E26C000F0874 /* UIBarButtonItem+GPUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E3F051CD0E26C000F0874 /* UIBarButtonItem+GPUIKit.swift */; };
+		5BA6A2713C6D3EF35A805F38767841EB /* Pods-GPUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F47C907939A53B20EC9210CED0F1FD64 /* Pods-GPUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C374FD0385DE45B61708D4A9A9E57AC /* GPUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9BC785CC968093322408835FDB71F9F /* GPUIKit.bundle */; };
+		81BD9EC05AC813D5A29B85F546A29DE7 /* Pods-GPUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE6FF08907D133BDF0215FF51979B56 /* Pods-GPUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AAE2C89D04F8F9BF55E2BAF6BF7D476 /* GPUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EBC1A7219BB761A7D284A5DE5EE81D4 /* GPUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9162D93227B3483CE0E99B6EF6DE489C /* GPUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1C10DEBAEB3A89B7C500C93CBC7679 /* GPUIKit-dummy.m */; };
+		935C3689F958B984DF479F3D54BAA145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C4AB83FADAF67CAE70F0678E61AF672A /* Pods-GPUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B53F3353E20A23DF0036CDA9E973F713 /* Pods-GPUIKit_Example-dummy.m */; };
+		FC1DE3A91E3E4A9772AB6979D0DE3D05 /* Pods-GPUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7466AF2A42242DAF3E7ACC492F357860 /* Pods-GPUIKit_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7272F62DC8EF7366FB281A77DB3FB12C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25250CE52090A05CA4B225E348E0FE0C;
+			remoteInfo = "GPUIKit-GPUIKit";
+		};
+		90803544026F98EEAA7F34C8BCED0E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4760547159A8088623CB6372ABA4C728;
+			remoteInfo = GPUIKit;
+		};
+		B88D2DBF740CE9B2E240B4187B0FFE8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4760547159A8088623CB6372ABA4C728;
+			remoteInfo = GPUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0159C1A4E67ECFCC43172B759215C5C5 /* Pods-GPUIKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GPUIKit_Example-resources.sh"; sourceTree = "<group>"; };
+		0BC9E46FCE78F233D4F13A01517DB006 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F48833A093A0D6A81EDCC64489DBBB7 /* Pods_GPUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		245447597BDBFC9DC8053E58C848D8FA /* Pods-GPUIKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GPUIKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2EBC1A7219BB761A7D284A5DE5EE81D4 /* GPUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GPUIKit-umbrella.h"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4D3E3EF31CD0E26C000F0874 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		4D3E3EF41CD0E26C000F0874 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4D3E3EF51CD0E26C000F0874 /* GPNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPNavController.swift; sourceTree = "<group>"; };
+		4D3E3EF61CD0E26C000F0874 /* GPNavControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPNavControllable.swift; sourceTree = "<group>"; };
+		4D3E3EF71CD0E26C000F0874 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		4D3E3EF81CD0E26C000F0874 /* CheckboxLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxLabelView.swift; sourceTree = "<group>"; };
+		4D3E3EF91CD0E26C000F0874 /* CheckboxLabelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckboxLabelView.xib; sourceTree = "<group>"; };
+		4D3E3EFA1CD0E26C000F0874 /* ExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewCell.swift; sourceTree = "<group>"; };
+		4D3E3EFB1CD0E26C000F0874 /* ExpandableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandableTableViewCell.xib; sourceTree = "<group>"; };
+		4D3E3EFC1CD0E26C000F0874 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
+		4D3E3EFD1CD0E26C000F0874 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4D3E3EFE1CD0E26C000F0874 /* MultiSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSelectTableViewController.swift; sourceTree = "<group>"; };
+		4D3E3EFF1CD0E26C000F0874 /* NextButtonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextButtonConfig.swift; sourceTree = "<group>"; };
+		4D3E3F001CD0E26C000F0874 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
+		4D3E3F011CD0E26C000F0874 /* RoundedTextFieldWithIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		4D3E3F021CD0E26C000F0874 /* UIColor+GPUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+GPUIKit.swift"; sourceTree = "<group>"; };
+		4D3E3F031CD0E26C000F0874 /* UIViewController+GPUIkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GPUIkit.swift"; sourceTree = "<group>"; };
+		4D3E3F041CD0E26C000F0874 /* UIButton+GPUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+GPUIKit.swift"; sourceTree = "<group>"; };
+		4D3E3F051CD0E26C000F0874 /* UIBarButtonItem+GPUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+GPUIKit.swift"; sourceTree = "<group>"; };
+		5392AA1405A897E4CE4A89BD0B2AF2CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E111C5AEBA5AC719C029B40B6FD124 /* Pods-GPUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GPUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6008CDC5C8E13CD7353CA7F86F90BBDB /* GPUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GPUIKit-prefix.pch"; sourceTree = "<group>"; };
+		65AED6252126A67B7CF9A30A3DC08B9E /* Pods-GPUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GPUIKit_Example.modulemap"; sourceTree = "<group>"; };
+		6D104F722A8572E3F36ADDA92F45E492 /* Pods-GPUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GPUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7466AF2A42242DAF3E7ACC492F357860 /* Pods-GPUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GPUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		7D8BEF8522445003AE6222A1576EAB3A /* Pods-GPUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7EBBB36180E626DDC007849714D6EF71 /* Pods-GPUIKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GPUIKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		97B972EAFC25618828E00FD86F062AA7 /* Pods-GPUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GPUIKit_Tests.modulemap"; sourceTree = "<group>"; };
+		97DAF2152BAC8196A5F373951E81C94E /* GPUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GPUIKit.modulemap; sourceTree = "<group>"; };
+		A8F31BAC7B4CBF23E9C9C703471200FE /* GPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9BC785CC968093322408835FDB71F9F /* GPUIKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPUIKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1C10DEBAEB3A89B7C500C93CBC7679 /* GPUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GPUIKit-dummy.m"; sourceTree = "<group>"; };
+		B21451F8F556AED1389D2CA2D7E01666 /* Pods_GPUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53F3353E20A23DF0036CDA9E973F713 /* Pods-GPUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GPUIKit_Example-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC490F1B8602F791275313C145F2FC1C /* GPUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GPUIKit.xcconfig; sourceTree = "<group>"; };
+		C952F1EBDBB49DED7A51052B366EB366 /* Pods-GPUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAC9E1F2296E279A12CC6F056C9F58C6 /* Pods-GPUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GPUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D6C55D7EF621B536951799D54AC69B3D /* Pods-GPUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GPUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA3AF2B032A25CA589CA9315EF9AEFDC /* Pods-GPUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GPUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5DB67AD1E05DBAC9DE6BA49656729F1 /* Pods-GPUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F36C9B89C7D777997FADE2962AB2F3E8 /* Pods-GPUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F47C907939A53B20EC9210CED0F1FD64 /* Pods-GPUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GPUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		FAE6FF08907D133BDF0215FF51979B56 /* Pods-GPUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GPUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FF24FF62BE4B79FE810B0689DF8A0E9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		354E2FEAB165C016B5459FDAAB72BF15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935C3689F958B984DF479F3D54BAA145 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57246825B2D2B5BB3C4F2971EDB3A594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E0585CD3F08B9E85D53923DCDDD1B35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D519DB54393D585D81731FDC6A2D1E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8FD3651074FA659BDCFA93C7047FA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2236F977BD44A0C2DB947A8E8BFD47DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3338D0103A0E81F2876A81D2F0CA313A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8E52CBB98F97C53C2FD4776F1B0B1D1 /* Pods-GPUIKit_Example */,
+				87AF2FE9C07CF88301EA2845937EE551 /* Pods-GPUIKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3799A11C12803CF0B44A90644D4BE773 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				872A9002EAE179B1DD20FF0A262ADC9D /* GPUIKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		51500401A34C77A2216D44F9D23A64C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9BC785CC968093322408835FDB71F9F /* GPUIKit.bundle */,
+				A8F31BAC7B4CBF23E9C9C703471200FE /* GPUIKit.framework */,
+				B21451F8F556AED1389D2CA2D7E01666 /* Pods_GPUIKit_Example.framework */,
+				1F48833A093A0D6A81EDCC64489DBBB7 /* Pods_GPUIKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A45BFDC59C750023D7DE995A1829B19 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97DAF2152BAC8196A5F373951E81C94E /* GPUIKit.modulemap */,
+				BC490F1B8602F791275313C145F2FC1C /* GPUIKit.xcconfig */,
+				AB1C10DEBAEB3A89B7C500C93CBC7679 /* GPUIKit-dummy.m */,
+				6008CDC5C8E13CD7353CA7F86F90BBDB /* GPUIKit-prefix.pch */,
+				2EBC1A7219BB761A7D284A5DE5EE81D4 /* GPUIKit-umbrella.h */,
+				5392AA1405A897E4CE4A89BD0B2AF2CB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GPUIKit";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				3799A11C12803CF0B44A90644D4BE773 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				51500401A34C77A2216D44F9D23A64C3 /* Products */,
+				3338D0103A0E81F2876A81D2F0CA313A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		872A9002EAE179B1DD20FF0A262ADC9D /* GPUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D9D4E37FFDA603ACBCD9B4E2A200E59 /* GPUIKit */,
+				7A45BFDC59C750023D7DE995A1829B19 /* Support Files */,
+			);
+			name = GPUIKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		87AF2FE9C07CF88301EA2845937EE551 /* Pods-GPUIKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FF24FF62BE4B79FE810B0689DF8A0E9B /* Info.plist */,
+				97B972EAFC25618828E00FD86F062AA7 /* Pods-GPUIKit_Tests.modulemap */,
+				D6C55D7EF621B536951799D54AC69B3D /* Pods-GPUIKit_Tests-acknowledgements.markdown */,
+				DA3AF2B032A25CA589CA9315EF9AEFDC /* Pods-GPUIKit_Tests-acknowledgements.plist */,
+				7466AF2A42242DAF3E7ACC492F357860 /* Pods-GPUIKit_Tests-dummy.m */,
+				245447597BDBFC9DC8053E58C848D8FA /* Pods-GPUIKit_Tests-frameworks.sh */,
+				7EBBB36180E626DDC007849714D6EF71 /* Pods-GPUIKit_Tests-resources.sh */,
+				FAE6FF08907D133BDF0215FF51979B56 /* Pods-GPUIKit_Tests-umbrella.h */,
+				C952F1EBDBB49DED7A51052B366EB366 /* Pods-GPUIKit_Tests.debug.xcconfig */,
+				E5DB67AD1E05DBAC9DE6BA49656729F1 /* Pods-GPUIKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-GPUIKit_Tests";
+			path = "Target Support Files/Pods-GPUIKit_Tests";
+			sourceTree = "<group>";
+		};
+		9D9D4E37FFDA603ACBCD9B4E2A200E59 /* GPUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E9B702A4BB20A00A4A03D98FA13AACC1 /* Classes */,
+			);
+			path = GPUIKit;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E9B702A4BB20A00A4A03D98FA13AACC1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D3E3EF31CD0E26C000F0874 /* AppTheme.swift */,
+				4D3E3EF41CD0E26C000F0874 /* BaseViewController.swift */,
+				4D3E3EF71CD0E26C000F0874 /* CheckBox.swift */,
+				4D3E3EF81CD0E26C000F0874 /* CheckboxLabelView.swift */,
+				4D3E3EF91CD0E26C000F0874 /* CheckboxLabelView.xib */,
+				4D3E3EFA1CD0E26C000F0874 /* ExpandableTableViewCell.swift */,
+				4D3E3EFB1CD0E26C000F0874 /* ExpandableTableViewCell.xib */,
+				4D3E3EFC1CD0E26C000F0874 /* ExpandableTableViewController.swift */,
+				4D3E3EF51CD0E26C000F0874 /* GPNavController.swift */,
+				4D3E3EF61CD0E26C000F0874 /* GPNavControllable.swift */,
+				4D3E3EFD1CD0E26C000F0874 /* GradientView.swift */,
+				4D3E3EFE1CD0E26C000F0874 /* MultiSelectTableViewController.swift */,
+				4D3E3EFF1CD0E26C000F0874 /* NextButtonConfig.swift */,
+				4D3E3F001CD0E26C000F0874 /* RoundedCornerButton.swift */,
+				4D3E3F011CD0E26C000F0874 /* RoundedTextFieldWithIcon.swift */,
+				4D3E3F051CD0E26C000F0874 /* UIBarButtonItem+GPUIKit.swift */,
+				4D3E3F041CD0E26C000F0874 /* UIButton+GPUIKit.swift */,
+				4D3E3F021CD0E26C000F0874 /* UIColor+GPUIKit.swift */,
+				4D3E3F031CD0E26C000F0874 /* UIViewController+GPUIkit.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8E52CBB98F97C53C2FD4776F1B0B1D1 /* Pods-GPUIKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0BC9E46FCE78F233D4F13A01517DB006 /* Info.plist */,
+				65AED6252126A67B7CF9A30A3DC08B9E /* Pods-GPUIKit_Example.modulemap */,
+				CAC9E1F2296E279A12CC6F056C9F58C6 /* Pods-GPUIKit_Example-acknowledgements.markdown */,
+				6D104F722A8572E3F36ADDA92F45E492 /* Pods-GPUIKit_Example-acknowledgements.plist */,
+				B53F3353E20A23DF0036CDA9E973F713 /* Pods-GPUIKit_Example-dummy.m */,
+				59E111C5AEBA5AC719C029B40B6FD124 /* Pods-GPUIKit_Example-frameworks.sh */,
+				0159C1A4E67ECFCC43172B759215C5C5 /* Pods-GPUIKit_Example-resources.sh */,
+				F47C907939A53B20EC9210CED0F1FD64 /* Pods-GPUIKit_Example-umbrella.h */,
+				F36C9B89C7D777997FADE2962AB2F3E8 /* Pods-GPUIKit_Example.debug.xcconfig */,
+				7D8BEF8522445003AE6222A1576EAB3A /* Pods-GPUIKit_Example.release.xcconfig */,
+			);
+			name = "Pods-GPUIKit_Example";
+			path = "Target Support Files/Pods-GPUIKit_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F5F8DE400B1BBC0C6082922EC0D896A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AAE2C89D04F8F9BF55E2BAF6BF7D476 /* GPUIKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CDC243B458B04F98BF9684701B7B9BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BD9EC05AC813D5A29B85F546A29DE7 /* Pods-GPUIKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8DF47024B3BF3178311333DD2C1152 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA6A2713C6D3EF35A805F38767841EB /* Pods-GPUIKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25250CE52090A05CA4B225E348E0FE0C /* GPUIKit-GPUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E09E32155263CBB98981EC8741DD3A1D /* Build configuration list for PBXNativeTarget "GPUIKit-GPUIKit" */;
+			buildPhases = (
+				875E6A455BE59E64E11D533976AC9AFF /* Sources */,
+				57246825B2D2B5BB3C4F2971EDB3A594 /* Frameworks */,
+				74CAEF70332877935FD3C8BF4F936536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPUIKit-GPUIKit";
+			productName = "GPUIKit-GPUIKit";
+			productReference = A9BC785CC968093322408835FDB71F9F /* GPUIKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4760547159A8088623CB6372ABA4C728 /* GPUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB048CC42544BC2F1ACE495F09E0B39 /* Build configuration list for PBXNativeTarget "GPUIKit" */;
+			buildPhases = (
+				C4F6EBD867AE6C3FDABB446FA2204267 /* Sources */,
+				C8FD3651074FA659BDCFA93C7047FA67 /* Frameworks */,
+				FFF2C1D43A28FE9B23E249014FDD9CEF /* Resources */,
+				0F5F8DE400B1BBC0C6082922EC0D896A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5EA884B75EDE7F1768B82F551029C84 /* PBXTargetDependency */,
+			);
+			name = GPUIKit;
+			productName = GPUIKit;
+			productReference = A8F31BAC7B4CBF23E9C9C703471200FE /* GPUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ABA314AADF6E14FC1D77F3A7C24AA3B9 /* Pods-GPUIKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75697DEB170477E5E48BA44D2DA6572A /* Build configuration list for PBXNativeTarget "Pods-GPUIKit_Example" */;
+			buildPhases = (
+				945B511CF8530AAA87B7EDBDAB6D5682 /* Sources */,
+				354E2FEAB165C016B5459FDAAB72BF15 /* Frameworks */,
+				CE8DF47024B3BF3178311333DD2C1152 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FABD461376E890592212CEC5512E6793 /* PBXTargetDependency */,
+			);
+			name = "Pods-GPUIKit_Example";
+			productName = "Pods-GPUIKit_Example";
+			productReference = B21451F8F556AED1389D2CA2D7E01666 /* Pods_GPUIKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6D631D4F42AA755B19D998F59CB369D /* Pods-GPUIKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C31FB4065ABC1966248B43C89D9184A /* Build configuration list for PBXNativeTarget "Pods-GPUIKit_Tests" */;
+			buildPhases = (
+				25A4731115941A29C5EC29C8606A5823 /* Sources */,
+				5E0585CD3F08B9E85D53923DCDDD1B35 /* Frameworks */,
+				9CDC243B458B04F98BF9684701B7B9BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20676F22B60DE7B53AD64EF1FB20BEC9 /* PBXTargetDependency */,
+			);
+			name = "Pods-GPUIKit_Tests";
+			productName = "Pods-GPUIKit_Tests";
+			productReference = 1F48833A093A0D6A81EDCC64489DBBB7 /* Pods_GPUIKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 51500401A34C77A2216D44F9D23A64C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4760547159A8088623CB6372ABA4C728 /* GPUIKit */,
+				25250CE52090A05CA4B225E348E0FE0C /* GPUIKit-GPUIKit */,
+				ABA314AADF6E14FC1D77F3A7C24AA3B9 /* Pods-GPUIKit_Example */,
+				E6D631D4F42AA755B19D998F59CB369D /* Pods-GPUIKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74CAEF70332877935FD3C8BF4F936536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF2C1D43A28FE9B23E249014FDD9CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3E3F0E1CD0E26C000F0874 /* ExpandableTableViewCell.xib in Resources */,
+				4D3E3F0C1CD0E26C000F0874 /* CheckboxLabelView.xib in Resources */,
+				7C374FD0385DE45B61708D4A9A9E57AC /* GPUIKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25A4731115941A29C5EC29C8606A5823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1DE3A91E3E4A9772AB6979D0DE3D05 /* Pods-GPUIKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875E6A455BE59E64E11D533976AC9AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945B511CF8530AAA87B7EDBDAB6D5682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AB83FADAF67CAE70F0678E61AF672A /* Pods-GPUIKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F6EBD867AE6C3FDABB446FA2204267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3E3F151CD0E26C000F0874 /* UIColor+GPUIKit.swift in Sources */,
+				9162D93227B3483CE0E99B6EF6DE489C /* GPUIKit-dummy.m in Sources */,
+				4D3E3F0F1CD0E26C000F0874 /* ExpandableTableViewController.swift in Sources */,
+				4D3E3F101CD0E26C000F0874 /* GradientView.swift in Sources */,
+				4D3E3F171CD0E26C000F0874 /* UIButton+GPUIKit.swift in Sources */,
+				4D3E3F061CD0E26C000F0874 /* AppTheme.swift in Sources */,
+				4D3E3F0A1CD0E26C000F0874 /* CheckBox.swift in Sources */,
+				4D3E3F131CD0E26C000F0874 /* RoundedCornerButton.swift in Sources */,
+				4D3E3F081CD0E26C000F0874 /* GPNavController.swift in Sources */,
+				4D3E3F071CD0E26C000F0874 /* BaseViewController.swift in Sources */,
+				4D3E3F091CD0E26C000F0874 /* GPNavControllable.swift in Sources */,
+				4D3E3F0B1CD0E26C000F0874 /* CheckboxLabelView.swift in Sources */,
+				4D3E3F181CD0E26C000F0874 /* UIBarButtonItem+GPUIKit.swift in Sources */,
+				4D3E3F111CD0E26C000F0874 /* MultiSelectTableViewController.swift in Sources */,
+				4D3E3F121CD0E26C000F0874 /* NextButtonConfig.swift in Sources */,
+				4D3E3F141CD0E26C000F0874 /* RoundedTextFieldWithIcon.swift in Sources */,
+				4D3E3F161CD0E26C000F0874 /* UIViewController+GPUIkit.swift in Sources */,
+				4D3E3F0D1CD0E26C000F0874 /* ExpandableTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20676F22B60DE7B53AD64EF1FB20BEC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUIKit;
+			target = 4760547159A8088623CB6372ABA4C728 /* GPUIKit */;
+			targetProxy = B88D2DBF740CE9B2E240B4187B0FFE8F /* PBXContainerItemProxy */;
+		};
+		F5EA884B75EDE7F1768B82F551029C84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GPUIKit-GPUIKit";
+			target = 25250CE52090A05CA4B225E348E0FE0C /* GPUIKit-GPUIKit */;
+			targetProxy = 7272F62DC8EF7366FB281A77DB3FB12C /* PBXContainerItemProxy */;
+		};
+		FABD461376E890592212CEC5512E6793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUIKit;
+			target = 4760547159A8088623CB6372ABA4C728 /* GPUIKit */;
+			targetProxy = 90803544026F98EEAA7F34C8BCED0E2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27E29C9B82F50A4D90A7C36D8294ECE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D8BEF8522445003AE6222A1576EAB3A /* Pods-GPUIKit_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GPUIKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPUIKit_Example/Pods-GPUIKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GPUIKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5242B139F2156A070DDF056E9357805A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC490F1B8602F791275313C145F2FC1C /* GPUIKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = GPUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7C76F99DF6F07ECB1CAA072AB4C20D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DB67AD1E05DBAC9DE6BA49656729F1 /* Pods-GPUIKit_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GPUIKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPUIKit_Tests/Pods-GPUIKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GPUIKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E4DF5ED8E51955EDBCCEA327DA9E513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC490F1B8602F791275313C145F2FC1C /* GPUIKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = GPUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8A9C60055F9C6E32AFC15D9008CF9FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC490F1B8602F791275313C145F2FC1C /* GPUIKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GPUIKit/GPUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GPUIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GPUIKit/GPUIKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GPUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9594F167EEF28FF85940EF59B514E959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36C9B89C7D777997FADE2962AB2F3E8 /* Pods-GPUIKit_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GPUIKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPUIKit_Example/Pods-GPUIKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GPUIKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A23EABA212E47FD580BE87C142F690CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC490F1B8602F791275313C145F2FC1C /* GPUIKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GPUIKit/GPUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GPUIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GPUIKit/GPUIKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GPUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0B6F82093BEBB701CE3F0C603463EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C952F1EBDBB49DED7A51052B366EB366 /* Pods-GPUIKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GPUIKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPUIKit_Tests/Pods-GPUIKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GPUIKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75697DEB170477E5E48BA44D2DA6572A /* Build configuration list for PBXNativeTarget "Pods-GPUIKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9594F167EEF28FF85940EF59B514E959 /* Debug */,
+				27E29C9B82F50A4D90A7C36D8294ECE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C31FB4065ABC1966248B43C89D9184A /* Build configuration list for PBXNativeTarget "Pods-GPUIKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B6F82093BEBB701CE3F0C603463EA4 /* Debug */,
+				7C76F99DF6F07ECB1CAA072AB4C20D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB048CC42544BC2F1ACE495F09E0B39 /* Build configuration list for PBXNativeTarget "GPUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A9C60055F9C6E32AFC15D9008CF9FD0 /* Debug */,
+				A23EABA212E47FD580BE87C142F690CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E09E32155263CBB98981EC8741DD3A1D /* Build configuration list for PBXNativeTarget "GPUIKit-GPUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5242B139F2156A070DDF056E9357805A /* Debug */,
+				7E4DF5ED8E51955EDBCCEA327DA9E513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

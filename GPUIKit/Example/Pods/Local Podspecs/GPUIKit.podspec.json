@@ -1,0 +1,24 @@
+{
+  "name": "GPUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of GPUIKit.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/GPUIKit",
+  "license": "MIT",
+  "authors": {
+    "Graham Pancio": "gpancio@yahoo.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/GPUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GPUIKit/Classes/**/*",
+  "resource_bundles": {
+    "GPUIKit": [
+      "GPUIKit/Assets/*.png"
+    ]
+  }
+}

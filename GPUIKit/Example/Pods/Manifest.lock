@@ -1,0 +1,14 @@
+PODS:
+  - GPUIKit (0.1.0)
+
+DEPENDENCIES:
+  - GPUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  GPUIKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GPUIKit: 1f6fa20d8f4cb4d58445fdab6fbca8de881c357f
+
+COCOAPODS: 0.39.0
