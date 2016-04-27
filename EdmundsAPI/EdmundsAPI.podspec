@@ -4,14 +4,13 @@ Pod::Spec.new do |s|
   s.summary          = "Easy acccess to the Edmunds API."
 
   s.description      = <<-DESC
+Wraps the Edmunds API to hopefully make it easy to use.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/EdmundsAPI"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/gpancio/iOS-Prototypes"
   s.license          = 'MIT'
   s.author           = { "Graham Pancio" => "gpancio@yahoo.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/EdmundsAPI.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/gpancio/iOS-Prototypes", :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
