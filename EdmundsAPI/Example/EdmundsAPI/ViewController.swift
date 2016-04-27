@@ -7,17 +7,35 @@
 //
 
 import UIKit
+import EdmundsAPI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GetMakesDelegate, GetModelsDelegate {
+    
+    let apiKey = "32hj79x57h9s2w6fcjane5at"
 
+    @IBAction func getMakes(sender: AnyObject) {
+        let svc = GetMakes(apiKey: apiKey)
+        svc.delegate = self
+        svc.makeRequest("2012")
+    }
+    
+    @IBAction func getModels(sender: AnyObject) {
+        let svc = GetModels(apiKey: apiKey)
+        svc.delegate = self
+        svc.makeRequest("2012", make: "Honda")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func onSuccess(makes: [String]) {
+        print("Got makes: \(makes)")
+    }
+    
+    func onFail() {
+        print("failed")
     }
 
 }

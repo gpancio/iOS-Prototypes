@@ -1,5 +1,14 @@
 PODS:
-  - EdmundsAPI (0.1.0)
+  - Alamofire (3.3.1)
+  - AlamofireObjectMapper (2.1.2):
+    - Alamofire (~> 3.2)
+    - ObjectMapper (~> 1.0)
+  - EdmundsAPI (0.1.0):
+    - Alamofire (~> 3.0)
+    - AlamofireObjectMapper (~> 2.1)
+    - SwiftyJSON
+  - ObjectMapper (1.2.0)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - EdmundsAPI (from `../`)
@@ -9,6 +18,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  EdmundsAPI: 5e40703489f78d44116b068d3845872609d78d71
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  AlamofireObjectMapper: 82391c31f23e37bdb2660da174bcf81b202da39d
+  EdmundsAPI: fa4eee05f6489799815cdf2a9905e336bdbc1389
+  ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0

@@ -84,8 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-EdmundsAPI_Example/Alamofire.framework"
+  install_framework "Pods-EdmundsAPI_Example/AlamofireObjectMapper.framework"
   install_framework "Pods-EdmundsAPI_Example/EdmundsAPI.framework"
+  install_framework "Pods-EdmundsAPI_Example/ObjectMapper.framework"
+  install_framework "Pods-EdmundsAPI_Example/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-EdmundsAPI_Example/Alamofire.framework"
+  install_framework "Pods-EdmundsAPI_Example/AlamofireObjectMapper.framework"
   install_framework "Pods-EdmundsAPI_Example/EdmundsAPI.framework"
+  install_framework "Pods-EdmundsAPI_Example/ObjectMapper.framework"
+  install_framework "Pods-EdmundsAPI_Example/SwiftyJSON.framework"
 fi

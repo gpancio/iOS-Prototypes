@@ -1,7 +1,7 @@
 {
   "name": "EdmundsAPI",
   "version": "0.1.0",
-  "summary": "A short description of EdmundsAPI.",
+  "summary": "Easy acccess to the Edmunds API.",
   "description": "",
   "homepage": "https://github.com/<GITHUB_USERNAME>/EdmundsAPI",
   "license": "MIT",
@@ -13,12 +13,23 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "EdmundsAPI/Classes/**/*",
   "resource_bundles": {
     "EdmundsAPI": [
       "EdmundsAPI/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~> 3.0"
+    ],
+    "SwiftyJSON": [
+
+    ],
+    "AlamofireObjectMapper": [
+      "~> 2.1"
     ]
   }
 }
