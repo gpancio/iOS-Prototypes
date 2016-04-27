@@ -1,0 +1,14 @@
+PODS:
+  - EdmundsAPI (0.1.0)
+
+DEPENDENCIES:
+  - EdmundsAPI (from `../`)
+
+EXTERNAL SOURCES:
+  EdmundsAPI:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EdmundsAPI: 5e40703489f78d44116b068d3845872609d78d71
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EdmundsAPI_Example', :exclusive => true do
+  pod 'EdmundsAPI', :path => '../'
+end
+
+target 'EdmundsAPI_Tests', :exclusive => true do
+  pod 'EdmundsAPI', :path => '../'
+
+  
+end

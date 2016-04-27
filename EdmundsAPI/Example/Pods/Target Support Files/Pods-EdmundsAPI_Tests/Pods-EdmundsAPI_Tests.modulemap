@@ -1,0 +1,6 @@
+framework module Pods_EdmundsAPI_Tests {
+  umbrella header "Pods-EdmundsAPI_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

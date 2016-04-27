@@ -1,0 +1,6 @@
+framework module Pods_EdmundsAPI_Example {
+  umbrella header "Pods-EdmundsAPI_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

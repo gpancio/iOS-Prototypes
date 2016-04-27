@@ -1,0 +1,6 @@
+framework module EdmundsAPI {
+  umbrella header "EdmundsAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
