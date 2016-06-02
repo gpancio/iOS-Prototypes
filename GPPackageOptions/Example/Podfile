@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GPPackageOptions_Example' do
+  pod 'GPPackageOptions', :path => '../'
+
+  target 'GPPackageOptions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

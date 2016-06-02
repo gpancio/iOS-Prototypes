@@ -1,0 +1,24 @@
+{
+  "name": "GPUIKit",
+  "version": "0.1.0",
+  "summary": "Some basic UI elements.",
+  "description": "These are some basic UI elements I am prototyping.",
+  "homepage": "https://github.com/gpancio/GPUIKit",
+  "license": "MIT",
+  "authors": {
+    "Graham Pancio": "gpancio@yahoo.com"
+  },
+  "source": {
+    "git": "https://github.com/gpancio/GPUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GPUIKit/Classes/**/*",
+  "resource_bundles": {
+    "GPUIKit": [
+      "GPUIKit/Assets/*.png"
+    ]
+  }
+}

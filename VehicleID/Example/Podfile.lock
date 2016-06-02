@@ -1,0 +1,19 @@
+PODS:
+  - MBProgressHUD (0.9.2)
+  - VehicleID (0.1.0):
+    - MBProgressHUD (~> 0.9.2)
+
+DEPENDENCIES:
+  - VehicleID (from `../`)
+
+EXTERNAL SOURCES:
+  VehicleID:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  VehicleID: 573dea687fb7f69d04a6f4e77ebe34b24afeb82a
+
+PODFILE CHECKSUM: 55f5ed9ac42e73332a5a009738754dcb50188515
+
+COCOAPODS: 1.0.1

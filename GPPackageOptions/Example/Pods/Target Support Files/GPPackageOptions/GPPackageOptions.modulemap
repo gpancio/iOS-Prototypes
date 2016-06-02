@@ -1,0 +1,6 @@
+framework module GPPackageOptions {
+  umbrella header "GPPackageOptions-umbrella.h"
+
+  export *
+  module * { export * }
+}

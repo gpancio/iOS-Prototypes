@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2H2-wl-Umm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--ScanVINViewController-->
+        <scene sceneID="tL4-J8-pWE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="IdentifyVehicle" bundleIdentifier="org.cocoapods.AudaToolkit-VehicleID" referencedIdentifier="ScanVINViewController" id="Mvs-65-yOL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Geb-Rk-sZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1917.5" y="429"/>
+        </scene>
+        <!--Identify your vehicle-->
+        <scene sceneID="syg-60-jSv">
+            <objects>
+                <viewController id="cFh-nz-YKX" customClass="IdentifyVehicleViewController" customModule="VehicleID_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PKd-C2-mrQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1F8-Gz-N3V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e1j-vg-vN0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NN1-RC-aKW">
+                                <rect key="frame" x="20" y="294" width="560" height="176"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="rhV-Uk-l4E"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="wSu-Y4-8SW" kind="embed" identifier="selectVehicleEmbed" id="5cE-ly-W9Y"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan your VIN for instant vehicle identification." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqR-5f-dtf">
+                                <rect key="frame" x="20" y="104" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or, select your vehicle:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2b-WE-dXK">
+                                <rect key="frame" x="213" y="265" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwO-iE-smY" customClass="RoundedCornerButton" customModule="AudaUIKit">
+                                <rect key="frame" x="213" y="153" width="174" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="ATW-n7-mBs"/>
+                                </constraints>
+                                <state key="normal" image="Camera"/>
+                                <connections>
+                                    <segue destination="Mvs-65-yOL" kind="show" identifier="scanVIN" id="FCB-tT-A6J">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pqR-5f-dtf" firstAttribute="centerX" secondItem="e1j-vg-vN0" secondAttribute="centerX" id="Fhe-Aj-qZU"/>
+                            <constraint firstItem="VwO-iE-smY" firstAttribute="top" secondItem="pqR-5f-dtf" secondAttribute="bottom" constant="28" id="SKD-BR-dGC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pqR-5f-dtf" secondAttribute="trailing" id="Xi4-En-Pod"/>
+                            <constraint firstItem="VwO-iE-smY" firstAttribute="centerX" secondItem="e1j-vg-vN0" secondAttribute="centerX" id="ZeB-B7-U6t"/>
+                            <constraint firstItem="NN1-RC-aKW" firstAttribute="top" secondItem="PKd-C2-mrQ" secondAttribute="bottom" constant="230" id="adI-Wn-zjO"/>
+                            <constraint firstItem="VwO-iE-smY" firstAttribute="height" secondItem="e1j-vg-vN0" secondAttribute="height" multiplier="0.0833333" id="ayW-9w-cs5"/>
+                            <constraint firstItem="j2b-WE-dXK" firstAttribute="centerX" secondItem="e1j-vg-vN0" secondAttribute="centerX" id="bTT-hV-tYY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pqR-5f-dtf" secondAttribute="leading" id="bfD-3n-dWy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NN1-RC-aKW" secondAttribute="trailing" id="ftl-B2-96S"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NN1-RC-aKW" secondAttribute="leading" id="ueY-qt-F0w"/>
+                            <constraint firstItem="pqR-5f-dtf" firstAttribute="top" secondItem="PKd-C2-mrQ" secondAttribute="bottom" constant="40" id="x28-p6-j76"/>
+                            <constraint firstItem="NN1-RC-aKW" firstAttribute="top" secondItem="j2b-WE-dXK" secondAttribute="bottom" constant="8" id="yqS-fZ-xuK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Identify your vehicle" id="gfy-O5-v9o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sCL-QR-DKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434" y="667"/>
+        </scene>
+        <!--SelectVehicle-->
+        <scene sceneID="PZ3-br-Mnn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelectVehicle" bundleIdentifier="org.cocoapods.AudaToolkit-VehicleID" id="wSu-Y4-8SW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ln-S1-92J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="697"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oMj-3v-lis">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2H2-wl-Umm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VK3-J2-L0w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cFh-nz-YKX" kind="relationship" relationship="rootViewController" id="cex-uM-SAj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hF-eE-j3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="667"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Camera" width="50" height="50"/>
+    </resources>
+</document>

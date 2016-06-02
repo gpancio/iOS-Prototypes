@@ -1,0 +1,16 @@
+PODS:
+  - GPPackageOptions (0.1.0)
+
+DEPENDENCIES:
+  - GPPackageOptions (from `../`)
+
+EXTERNAL SOURCES:
+  GPPackageOptions:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GPPackageOptions: bf489dba34eecdfb088e8b78bcbf6cdc88b03327
+
+PODFILE CHECKSUM: 5c40acc8055823b675c658179156cb1c060166d9
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VehicleID_Example' do
+  pod 'VehicleID', :path => '../'
+
+  target 'VehicleID_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

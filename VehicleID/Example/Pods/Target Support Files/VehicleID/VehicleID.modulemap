@@ -1,0 +1,6 @@
+framework module VehicleID {
+  umbrella header "VehicleID-umbrella.h"
+
+  export *
+  module * { export * }
+}

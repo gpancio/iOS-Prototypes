@@ -1,0 +1,35 @@
+{
+  "name": "EdmundsAPI",
+  "version": "0.1.0",
+  "summary": "Easy acccess to the Edmunds API.",
+  "description": "Wraps the Edmunds API to hopefully make it easy to use.",
+  "homepage": "https://github.com/gpancio/iOS-Prototypes",
+  "license": "MIT",
+  "authors": {
+    "Graham Pancio": "gpancio@yahoo.com"
+  },
+  "source": {
+    "git": "https://github.com/gpancio/iOS-Prototypes",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "EdmundsAPI/Classes/**/*",
+  "resource_bundles": {
+    "EdmundsAPI": [
+      "EdmundsAPI/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~> 3.0"
+    ],
+    "SwiftyJSON": [
+
+    ],
+    "AlamofireObjectMapper": [
+      "~> 2.1"
+    ]
+  }
+}

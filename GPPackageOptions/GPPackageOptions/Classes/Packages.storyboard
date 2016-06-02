@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z2e-35-23u">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Package View Controller-->
+        <scene sceneID="npg-c5-4pl">
+            <objects>
+                <viewController storyboardIdentifier="VehiclePackageViewController" id="z2e-35-23u" customClass="SelectPackageViewController" customModule="AudaToolkit_VehicleOptions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3NB-g4-Gcu"/>
+                        <viewControllerLayoutGuide type="bottom" id="0na-UR-7PH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Die-DW-I0H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXH-9x-HYk">
+                                <rect key="frame" x="20" y="83" width="560" height="358"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="358" id="bHV-JU-t2G"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="2fR-Qw-2YT" kind="embed" identifier="pdtvcEmbed" id="e9m-G3-TAg"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a package:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT4-Jv-seH">
+                                <rect key="frame" x="20" y="28" width="560" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gT4-Jv-seH" firstAttribute="top" secondItem="3NB-g4-Gcu" secondAttribute="bottom" constant="8" id="3cP-yt-xyl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZXH-9x-HYk" secondAttribute="leading" id="NtB-1Y-hIa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gT4-Jv-seH" secondAttribute="trailing" id="bND-W2-l9S"/>
+                            <constraint firstItem="ZXH-9x-HYk" firstAttribute="top" secondItem="gT4-Jv-seH" secondAttribute="bottom" constant="31" id="jWa-aI-Mfs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gT4-Jv-seH" secondAttribute="leading" id="q7V-Wd-Lb4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZXH-9x-HYk" secondAttribute="trailing" id="qZM-bU-Ngl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIe-hF-bYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="353"/>
+        </scene>
+        <!--Expandable Table View Controller-->
+        <scene sceneID="Lnl-YY-UK3">
+            <objects>
+                <viewController id="2fR-Qw-2YT" customClass="ExpandableTableViewController" customModule="AudaUIKit" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="79b-p8-iZz">
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="358"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnd-B9-3Ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="987"/>
+        </scene>
+    </scenes>
+</document>
